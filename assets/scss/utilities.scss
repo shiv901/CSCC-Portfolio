@@ -1,0 +1,158 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+%btn-shared{
+  display: inline-block;
+  padding: 0.5rem 2em;
+  transition: 0.5s;
+  border:none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.btn{
+  &-main{
+    @extend %btn-shared;
+    background: $main-color;
+    color: #333;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: #333;
+  }
+  &-dark {
+    @extend %btn-shared;
+    background: $dark-color;
+    color: #fff;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover{
+  background: $main-color;
+  color: $light-color;
+}
+
+.lead{
+  font-size: 1.3em;
+}
+
+.text-center{
+  text-align: center;
+}
+
+//Padding classes
+.p{
+  // Vertical
+  &y-1{
+    padding: 1rem 0;
+  }
+  &y-2{
+    padding: 2rem 0;
+  }
+  &y-3{
+    padding: 3rem 0;
+  }
+  &y-4{
+    padding: 4rem 0;
+  }
+
+  // Horizontal
+  &x-1{
+    padding: 0 1rem;
+  }
+  &x-2{
+    padding: 0 2rem;
+  }
+  &x-3{
+    padding: 0 3rem;
+  }
+  &x-4{
+    padding: 0 4rem;
+  }
+
+  //Both
+  &-1{
+    padding: 1rem;
+  }
+  &-2{
+    padding: 2rem;
+  }
+  &-3{
+    padding: 3rem;
+  }
+  &-4{
+    padding: 4rem;
+  }
+}
+
+.section-title{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: auto;
+  
+}
+
+.bottom-line{
+  background: $main-color;
+  width: 10%;
+  height: 2px;
+  margin: auto;
+  margin-bottom: 1rem;;
+}
+
+//Margin 
+.m{
+  // Vertical
+  &y-1{
+    margin: 1rem 0;
+  }
+  &y-2{
+    margin: 2rem 0;
+  }
+  &y-3{
+    margin: 3rem 0;
+  }
+  &y-4{
+    margin: 4rem 0;
+  }
+
+  // Horizontal
+  &x-1{
+    margin: 0 1rem;
+  }
+  &x-2{
+    margin: 0 2rem;
+  }
+  &x-3{
+    margin: 0 3rem;
+  }
+  &x-4{
+    margin: 0 4rem;
+  }
+
+  //Both
+  &-1{
+    margin: 1rem;
+  }
+  &-2{
+    margin: 2rem;
+  }
+  &-3{
+    margin: 3rem;
+  }
+  &-4{
+    margin: 4rem;
+  }
+
+}
