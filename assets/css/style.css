@@ -410,8 +410,8 @@ img {
   }
   #home-a .specials,
   #home-b .stats {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   #home-c .process {
     -ms-grid-columns: 1fr;
