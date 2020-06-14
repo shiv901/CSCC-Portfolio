@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'utilities';
-
 // General Styling
 *{
   margin: 0;
@@ -39,6 +38,7 @@ img{
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  align-items: center;
 
   ul{
     display: flex;
@@ -71,7 +71,7 @@ img{
 #header{
   //Header Home
   &-home{
-  background: $bg-img no-repeat center right/cover;
+  background: $bg-img no-repeat center center/cover;
   color: $light-color;
   height: 100vh;
   }
@@ -100,9 +100,6 @@ img{
       .fas{
         color: $main-color;
         padding-bottom: 0.4rem;
-      }
-      p{
-        // text-align: justify;;
       }
     }  
   }
@@ -215,3 +212,4 @@ img{
     }
   }
 }
+@import 'media';
