@@ -93,6 +93,10 @@ input[class^="btn-"]:hover {
   padding: 4rem;
 }
 
+.only-mobile {
+  display: none;
+}
+
 .section-title {
   font-size: 2em;
   font-weight: bold;
@@ -390,9 +394,15 @@ img {
     font-size: 0.7rem;
     padding: 0.5em 1em;
   }
+  #header-content {
+    padding-top: 40%;
+  }
   #header-content h1 {
     font-size: 7vw;
     margin-bottom: 0.5rem;
+  }
+  #header-content h1 .only-mobile {
+    display: initial;
   }
   #header-content p {
     font-size: 2.5vw;
@@ -402,14 +412,6 @@ img {
   #home-b .stats {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-  }
-  #home-b .stats div:nth-child(-n+2) {
-    padding: 2rem 0;
-    background: #f4f4f4;
-  }
-  #home-b .stats div:nth-child(n+3) {
-    padding: 2rem 0;
-    background: #ccc;
   }
   #home-c .process {
     -ms-grid-columns: 1fr;

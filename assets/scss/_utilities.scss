@@ -94,6 +94,10 @@ input[class^="btn-"]:hover{
   }
 }
 
+.only-mobile{
+  display: none;
+}
+
 .section-title{
   font-size: 2em;
   font-weight: bold;

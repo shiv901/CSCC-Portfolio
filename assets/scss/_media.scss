@@ -18,9 +18,14 @@
   }
 
   #header-content{
+    padding-top: 40%;
     h1{
       font-size: 7vw;
       margin-bottom: 0.5rem;
+
+      .only-mobile{
+        display: initial;
+      }
     }
     p{
       font-size: 2.5vw;
@@ -28,21 +33,23 @@
     }
   }
 
+  
+
   #home-a .specials,
   #home-b .stats{
     grid-template-columns: repeat(1, 1fr);
   }
   #home-b .stats{
-    div {
-      &:nth-child(-n+2){
-        padding: 2rem 0;          
-        background: $light-color;
-      }
-      &:nth-child(n+3){
-        padding: 2rem 0;            
-        background: $medium-color;
-      }
-    }
+    // div {
+    //   &:nth-child(-n+2){
+    //     padding: 2rem 0;          
+    //     background: $light-color;
+    //   }
+    //   &:nth-child(n+3){
+    //     padding: 2rem 0;            
+    //     background: $medium-color;
+    //   }
+    // }
   }
 
   #home-c .process{
